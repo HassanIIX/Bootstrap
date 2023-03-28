@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
@@ -51,15 +51,33 @@
 
             <div class="col-sm-8">
                 <!-- Contenu de la colonne principale à insérer ici -->
+
+                <h1>
+                    Introduction
+                </h1>
+                <p>
+                    Bootstrap est une collection d'outils utiles à la création du design (graphisme, animation et
+                    interactions avec la page dans le navigateur,...) de sites et d'applications web. C'est un ensemble
+                    qui contient des codes HTML et CSS, des formulaires, boutons, outils de navigation et autres
+                    éléments interactifs, ainsi que des extensions JavaScript en option. C'est l'un des projets les plus
+                    populaires sur la plate-forme de gestion de développement GitHub (source Wikipedia).
+                </p>
+
+                <p>
+                    Site officiel : <a href="https://getbootstrap.com/">https://getbootstrap.com</a>
+                </p>
                 <p>
                     Logo : <img class="mx-auto d-block img-fluid" style="max-width:150px;"
                         src="./images/bootstrap-logo.jpg" alt="Logo de Bootstrap" />
                 </p>
                 <!-- Carousel -->
                 <div id="idCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <h2>Exemple de site réalisé avec Bootstrap</h2>
                     <ul class="carousel-indicators">
                         <li data-target="#idCarousel" data-slide-to="0" class="active"></li>
-                        <!--A compléter... -->
+                        <li data-target="#idCarousel" data-slide-to="1"></li>
+                        <li data-target="#idCarousel" data-slide-to="2"></li>
+                        <li data-target="#idCarousel" data-slide-to="3"></li>
                         <li data-target="#idCarousel" data-slide-to="4"></li>
                     </ul>
                     <div class="carousel-inner">
@@ -71,7 +89,19 @@
                             <img class="mx-auto d-block img-fluid" src="./images/carousel.jpg"
                                 alt="Exemple de site réalisé avec Bootstrap avec caroussel" />
                         </div>
-                        <!--A compléter... -->
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="./images/form.jpg"
+                                alt="Exemple de site réalisé avec Bootstrap avec caroussel" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="./images/monitor.jpg"
+                                alt="Exemple de site réalisé avec Bootstrap avec caroussel" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block img-fluid" src="./images/pricing.png"
+                                alt="Exemple de site réalisé avec Bootstrap style album" />
+                        </div>
+
                     </div>
                     <a class="carousel-control-prev" href="#idCarousel" data-slide="prev"><span
                             class="carousel-control-prev-icon"></span></a>
@@ -113,23 +143,65 @@
                     <div class="card-body">
                         <form method="post" action="#">
                             <div class="form-group" class="text-center">
-                                <label for="email">Pseudo :</label>
-                                <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+                                <label for="pseudo">Pseudo :</label>
+                                <input type="pseudo" class="form-control" id="pseudo" placeholder="Entrez votre pseudo">
                             </div>
 
                             <div class="form-group" class="text-center">
-                                <label for="comment">Message :</label>
-                                <textarea class="form-control" id="comment" rows="5"
-                                    placeholder="Entrez votre commentaire"></textarea>
+                                <label for="message">Message :</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Entrez votre message"></textarea>
                             </div>
 
-                            <button type="button" class="btn-success form-control">
+                            <button type="button" class="btn btn-primary form-control">
                                 Rechercher
                             </button>
                         </form>
                     </div>
                 </div>
-               
+
+
+
+
+
+
+
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa fa-comments"></i> Dernier commentaire
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="#">
+                            <div class="card">
+                                <div class="card-body">
+                                <div class="form-group" class="text-center">
+                                    <h5> G.MENVU</h5>
+                                    <p>Très bon tuto, parfait, comme toujours sur ce site Internet au design futuriste.
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                <div class="form-group" class="text-center">
+                                    <h5> H.CHISMAN</h5>
+                                    <p>Site très instructif, c'est devenu pour moi une référence en matière de
+                                        développement Web. Le design est génial. </p>
+                                </div>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+
+
+
             </div>
         </div>
 
