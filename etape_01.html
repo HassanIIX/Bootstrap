@@ -62,7 +62,6 @@
                     éléments interactifs, ainsi que des extensions JavaScript en option. C'est l'un des projets les plus
                     populaires sur la plate-forme de gestion de développement GitHub (source Wikipedia).
                 </p>
-
                 <p>
                     Site officiel : <a href="https://getbootstrap.com/">https://getbootstrap.com</a>
                 </p>
@@ -125,7 +124,8 @@
                                 <input class="form-control" type="text" name="recherche" id="recherche" />
                             </div>
                             <div class="form-group">
-                                <button type="button" class="btn-success form-control">
+                                <button type="button" class="btn-success form-control" data-toggle="modal"
+                                    data-target="#myModal">
                                     Rechercher
                                 </button>
                             </div>
@@ -133,8 +133,6 @@
                     </div>
                 </div>
                 <!-- Fin Formulaire de recherche -->
-
-
 
                 <div class="card">
                     <div class="card-header">
@@ -160,14 +158,6 @@
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-
                 <div class="card">
                     <div class="card-header">
                         <i class="fa fa-comments"></i> Dernier commentaire
@@ -176,39 +166,29 @@
                         <form method="post" action="#">
                             <div class="card">
                                 <div class="card-body">
-                                <div class="form-group" class="text-center">
-                                    <h5> G.MENVU</h5>
-                                    <p>Très bon tuto, parfait, comme toujours sur ce site Internet au design futuriste.
-                                    </p>
+                                    <div class="form-group" class="text-center">
+                                        <h5> G.MENVU</h5>
+                                        <p>Très bon tuto, parfait, comme toujours sur ce site Internet au design
+                                            futuriste.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                <div class="form-group" class="text-center">
-                                    <h5> H.CHISMAN</h5>
-                                    <p>Site très instructif, c'est devenu pour moi une référence en matière de
-                                        développement Web. Le design est génial. </p>
+                                    <div class="form-group" class="text-center">
+                                        <h5> H.CHISMAN</h5>
+                                        <p>Site très instructif, c'est devenu pour moi une référence en matière de
+                                            développement Web. Le design est génial. </p>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </form>
                     </div>
                 </div>
 
-
-
-
-
-
-
             </div>
         </div>
-
-
-
-
-
 
     </div>
     <!-- Fin Colonne de droite -->
@@ -216,13 +196,37 @@
     </div>
     <!-- Fin ZONE PRINCIPALE -->
 
-
-
     <!-- PIED DE PAGE -->
     <div class="jumbotron text-center" style="margin-bottom:0">
         &copy; 2018 - Vous pouvez maintenant prendre exemple !
     </div>
     <!-- Fin PIED DE PAGE -->
+
+    <!-- Une boite de dialogue -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin boite de dialogue -->
 
 </body>
 
